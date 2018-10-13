@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  proxy:
+    image: princemaple/docker-caddy:fproxy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./Caddyfile:/etc/Caddyfile
