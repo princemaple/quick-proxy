@@ -1,0 +1,13 @@
+https://DOMAIN {
+  log stdout
+  timeouts none
+  
+  forwardproxy {
+    basicauth USER PASS
+    probe_resistance wtf.localhost
+    serve_pac wtf.pac
+    hide_ip
+  }
+  
+  tls EMAIL
+}
